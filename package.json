@@ -1,0 +1,32 @@
+{
+  "name": "homebridge-ibeacon-sensor",
+  "version": "1.0.0",
+  "description": "Bluetooth iBeacon Sensor for detecting occupancy",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbuckaway/homebridge-ibeacon-sensor.git"
+  },
+  "keywords": [
+    "homebridge",
+    "ibeacon",
+    "bluetoothle"
+  ],
+  "author": "Mark Buckaway <mark@buckaway.ca>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbuckaway/homebridge-ibeacon-sensor/issues"
+  },
+  "homepage": "https://github.com/mbuckaway/homebridge-ibeacon-sensor#readme",
+  "dependencies": {
+    "homebridge": "^0.4.45",
+    "homebridge-lib": "^4.0.0",
+  },
+  "engines": {
+    "homebridge": ">=0.4.33",
+    "node": ">=6.12.2"
+  }
+}
