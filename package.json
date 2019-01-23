@@ -4,14 +4,16 @@
   "description": "Bluetooth iBeacon Sensor for detecting occupancy",
   "main": "index.js",
   "scripts": {
-    "test": "test.js"
+    "test": "NOBLE_HCI_DEVICE_ID=0 node ibeacon.js",
+    "discovery": "NOBLE_HCI_DEVICE_ID=0 node discovery.js",
+    "peripheral-explorer": "NOBLE_HCI_DEVICE_ID=0 node peripheral-explorer.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mbuckaway/homebridge-ibeacon-sensor.git"
   },
   "keywords": [
-    "homebridge",
+    "homebridge-plugin",
     "ibeacon",
     "bluetoothle"
   ],
@@ -22,8 +24,11 @@
   },
   "homepage": "https://github.com/mbuckaway/homebridge-ibeacon-sensor#readme",
   "dependencies": {
+    "async": "^2.6.1",
+    "debug": "^4.1.1",
     "homebridge": "^0.4.45",
-    "homebridge-lib": "^4.0.0",
+    "homebridge-lib": "^4.0.3",
+    "noble": "^1.9.1"
   },
   "engines": {
     "homebridge": ">=0.4.33",
