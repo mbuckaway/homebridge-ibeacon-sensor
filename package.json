@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/mbuckaway/homebridge-ibeacon-sensor#readme",
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^2.6.3",
     "debug": "^4.1.1",
-    "homebridge": "^0.4.45",
-    "homebridge-lib": "^4.0.3",
+    "homebridge": "^0.4.50",
+    "homebridge-lib": "^4.3.3",
     "noble": "^1.9.1"
   },
   "engines": {

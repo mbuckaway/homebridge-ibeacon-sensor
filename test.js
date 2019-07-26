@@ -7,6 +7,7 @@ var config = {
     "showenter": true,
     "serviceUUIDs": ["feaa", "fff0"],
     "heartbeatInterval" : 2000,
+    "restartScanHeartbeatInterval": 60000,
     "reportInterval": 60000,
     "skipfirstenter": true,
     "beacons" :
@@ -15,14 +16,14 @@ var config = {
             "uuid": "DC:0D:30:46:EE:E2",
             "rssi_enter_threshold": -80,
             "rssi_exit_threshold": -90,
-            "exit_graceperiod": 5000,
+            "exit_graceperiod": 10000,
             "name": "Car Beacon"
         },
         {
             "uuid": "DC:0D:30:46:09:40",
             "rssi_enter_threshold": -70,
-            "rssi_exit_threshold": -80,
-            "exit_graceperiod": 5000,
+            "rssi_exit_threshold": -90,
+            "exit_graceperiod": 10000,
             "name": "Backpack Beacon"
         },
     ],

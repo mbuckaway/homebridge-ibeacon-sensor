@@ -26,6 +26,7 @@ class BeaconSensor {
             heartbeatInterval : 2000,
             reportInterval: 0,
             skipfirstenter: true,
+            restartScanHeartbeatInterval: 60000,
             beacons : []
         }
   
@@ -38,6 +39,7 @@ class BeaconSensor {
         optionParser.boolKey('showenter');
         optionParser.intKey('heartbeatInterval', 500, 5000);
         optionParser.intKey('reportInterval', 2000, 1000000);
+        optionParser.intKey('restartScanHeartbeatInterval', 10000, 300000);
         optionParser.boolKey('skipfirstenter');
         optionParser.listKey('serviceUUIDs');
         optionParser.listKey('beacons');
